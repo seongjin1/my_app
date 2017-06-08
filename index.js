@@ -26,7 +26,8 @@ app.use("/", require("./routes/home"));
 app.use("/posts", require("./routes/posts"));
 
 
+var port = process.env.PORT || 3000;
 // Port setting
-app.listen(3000, function(){
+app.listen(port, function(){
   console.log("server on!");
 });
